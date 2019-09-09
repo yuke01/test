@@ -10,7 +10,7 @@ export default {
   data () {
     return {
       ruleForm: {
-        name: '',
+        name: 'yuke',
         region: ''
       }
     }
