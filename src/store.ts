@@ -5,7 +5,8 @@ Vue.use(Vuex)
 
 export default new Vuex.Store({
   state: {
-    yuke: 1
+    yuke: 1,
+    logind: false
   },
   mutations: {
     btn1 (state,abc) {
@@ -17,6 +18,12 @@ export default new Vuex.Store({
     btn2 (state,abc) {
       console.log(abc)
       alert('abc')
+    },
+    shange_logind (state,logind) {
+      // commit('show',logind)
+      console.log(state.state.logind,logind)
+      state.state.logind = logind
+      // state.logind = logind
     }
   }
 })
