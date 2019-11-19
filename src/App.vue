@@ -1,14 +1,23 @@
 <template>
   <div id="app">
     <router-view />
-    <loding />
+    <!-- <HomeBox @yk="yk11"> </HomeBox> -->
   </div>
 </template>
 <script>
 import loding from '@/components/loding.vue'
+import HomeBox from '@/components/home.vue'
 export default {
   components: {
-    loding
+    loding,
+    HomeBox
+  },
+  data () {
+    return {
+
+    }
+  },
+  methods: {
   }
 }
 </script>

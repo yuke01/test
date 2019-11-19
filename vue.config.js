@@ -9,11 +9,20 @@ module.exports = {
     }
   },
   devServer: {
-    port: 9999,
+    port: 8080,
     open: true,
     overlay: {
       warnings: false,
       errors: true
-    }
+    },
+    // proxy: {
+    //   '/api': {
+    //       target: 'http://www.science.com:8081', //API服务器的地址
+    //       changeOrigin: true,
+    //       pathRewrite: {
+    //           '^/api': ''
+    //       }
+    //     }
+    //   }
   }
 }
