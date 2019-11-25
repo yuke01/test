@@ -1,7 +1,7 @@
 <template>
   <div class="Login_box">
     <div class="login_top">
-      <p style="    padding: 20px;">SCIENCE</p>
+      <p style="padding: 20px;">SCIENCE</p>
       <el-form :model="ruleForm" label-width="80px" class="demo-ruleForm">
         <el-form-item label="用户名" prop="name">
           <el-input v-model="ruleForm.name" style="width:80%;"></el-input>
@@ -27,6 +27,7 @@ export default {
       }
     };
   },
+  // components:{aa},
   created() {
     //  setInterval(() => {this.login()},3000)  3秒一次发生请求
   },

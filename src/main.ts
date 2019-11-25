@@ -5,15 +5,16 @@ import router from './router'
 import ElementUI from 'element-ui'
 import 'element-ui/lib/theme-chalk/index.css'
 import axios from 'axios'
-import { Loading, Message } from 'element-ui' // 引用element-ui的加载和消息提示组件
+// import { Loading, Message } from 'element-ui' // 引用element-ui的加载和消息提示组件
 // import login from './components/loading.vue'
+// import Loading from '@/views/loading'
+// Vue.use(Loading);
 Vue.use(ElementUI)
 Vue.config.productionTip = false
 Vue.prototype.$axios = axios
 // axios.defaults.baseURL = '/api'
 // axios.defaults.headers.post['Content-Type'] = 'application/json';
-
-let loading = null
+// let loading = null
 // 请求拦截器
 axios.interceptors.request.use(
   config => {

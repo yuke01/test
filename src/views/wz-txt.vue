@@ -14,7 +14,6 @@
         <el-select
           v-model="form.topicid"
           placeholder="请选择活动区域"
-          :disabled="objdata != undefined"
         >
           <el-option
             :label="item.topic_name"
